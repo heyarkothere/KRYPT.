@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+} 
+
+@font-face {
+    font-family: 'JetBrains Mono', monospace;
+    src: url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&family=Roboto:wght@100;300;400&display=swap');
+}
+
+.page {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75em;
+}
+h1{
+    font-size:xx-large;
+    font-weight:bold;
+    font-family: 'JetBrains Mono', monospace;
+    font-family: 'Roboto', sans-serif;
+}
+.cover {
+    font-weight: bolder;
+    background-color: white;
+    width: 30%;
+    height: 50%;
+    position: relative;
+    border-radius: 1em;
+    box-shadow: 0 0.188em 1.550em rgb(156, 156, 156);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+.alt-login {
+    width: 80%;
+    height: 3em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.alt-login div {
+    width: 30%;
+    height: 100%;
+    border-radius: 0.25em;
+    background-color: black;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.google 
+{background-image: url("../icons/google.png");}
+.facebook {background-image: url("../icons/facebook.png");}
+
+input {
+    border: none;
+    background-color: rgb(229, 226, 226);
+    width: 50%;
+    border-radius: 0.25em;
+    text-align: center;
+    padding: 2em;
+    font-size: 0.75em;
+}
+
+input:focus {
+    outline-color: black;
+}
+
+
+.login-btn {
+    color: white;
+    width: 40%;
+    height: 3em;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 0.25em;
+    cursor: pointer;
+}
+
+.login-btn:hover { transform: scale(1.25);}
+
+.text {
+    position: relative;
+    bottom: 0.5%;
+    font-size:larger;
+}
+
+.hide {
+    position: absolute;
+    transform: scale(0);
+}
+
+.login-popup {
+    position: absolute;
+    height: 30em;
+    width: 30em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.25em;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    transform: scale(1);
+    transition: 1.5s;
+}
+
+.signup-btn {
+    color: white;
+    width: 40%;
+    height: 3em;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 0.25em;
+    cursor: pointer;
+}
+.signup-btn:hover { transform: scale(1.25);}
